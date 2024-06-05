@@ -24,7 +24,6 @@ fn largest_prime_factor(mut n: u64) -> u64 {
 }
 
 #[cfg(test)]
-
 mod tests {
     use super::*;
 
