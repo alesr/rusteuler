@@ -1,11 +1,11 @@
 use std::f64;
 
-const INPUT_EULER_2: u64 = 4_000_000;
+const INPUT: u64 = 4_000_000;
 
-// Euler 2: Even Fibonacci numbers.
+// Problem 2: Even Fibonacci numbers.
 
 pub fn run() {
-    println!("Euler 2: {}", even_fibonacci(INPUT_EULER_2));
+    println!("Problem 2: {}", even_fibonacci(INPUT));
 }
 
 // Constants for Binet's formula.
@@ -43,8 +43,12 @@ mod tests {
     use super::*;
 
     #[test]
+    fn example() {
+        assert_eq!(even_fibonacci(10), 10);
+    }
+
+    #[test]
     fn solution() {
-        let result = even_fibonacci(INPUT_EULER_2);
-        assert_eq!(result, 4613732);
+        assert_eq!(even_fibonacci(INPUT), 4613732);
     }
 }

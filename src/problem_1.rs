@@ -1,9 +1,9 @@
-const INPUT_EULER_1: i32 = 1000;
+const INPUT: i32 = 1000;
 
-// Euler 1: Multiples of 3 and 5.
+// Problem 1: Multiples of 3 and 5.
 
 pub fn run() {
-    println!("Euler 1: {}", multiples_of_3_5(INPUT_EULER_1));
+    println!("Problem 1: {}", multiples_of_3_5(INPUT));
 }
 
 fn multiples_of_3_5(count: i32) -> i32 {
@@ -23,8 +23,12 @@ mod tests {
     use super::*;
 
     #[test]
+    fn example() {
+        assert_eq!(multiples_of_3_5(10), 23);
+    }
+
+    #[test]
     fn solution() {
-        let result = multiples_of_3_5(INPUT_EULER_1);
-        assert_eq!(result, 233168);
+        assert_eq!(multiples_of_3_5(INPUT), 233168);
     }
 }

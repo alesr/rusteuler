@@ -1,10 +1,10 @@
-mod euler_1;
-mod euler_2;
+mod problem_1;
+mod problem_2;
 
 #[macro_use]
 extern crate lazy_static;
 
 fn main() {
-    euler_1::run();
-    euler_2::run();
+    problem_1::run();
+    problem_2::run();
 }
