@@ -1,5 +1,7 @@
 const NUMBER_OF_DIGITS: u32 = 3;
 
+// Problem 4: Largest Palindrome Product
+
 pub fn run() {
     println!(
         "Problem 4: {}",
