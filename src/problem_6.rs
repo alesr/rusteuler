@@ -25,7 +25,7 @@ mod tests {
     fn example() {
         assert_eq!(sum_square_difference(10), 2640);
     }
-    
+
     #[test]
     fn solution() {
         assert_eq!(sum_square_difference(INPUT), 25164150);
